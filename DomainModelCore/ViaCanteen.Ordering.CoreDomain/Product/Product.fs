@@ -1,3 +1,6 @@
-namespace ViaCanteen.Ordering.CoreDomain.Product
+module ViaCanteen.Ordering.CoreDomain.Product
 
-type Product
+open Drink
+open Food
+
+type Product = { Drink: Drink option; Food: Food option }

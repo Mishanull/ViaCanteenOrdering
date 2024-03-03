@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainModelCore", "DomainModelCore", "{E2A652F8-AE95-4BBD-8928-6B5A66C7E141}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ViaCanteen.Ordering.CoreDomain", "DomainModelCore\ViaCanteen.Ordering.CoreDomain\ViaCanteen.Ordering.CoreDomain.fsproj", "{37EA9343-984B-4500-9A5C-D827E1CC77C0}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ViaCanteen.Ordering.CoreDomainTests", "DomainModelCore\ViaCanteen.Ordering.CoreDomainTests\ViaCanteen.Ordering.CoreDomainTests.fsproj", "{9144343E-1BAC-42AD-BCF5-00BD9D7114DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37EA9343-984B-4500-9A5C-D827E1CC77C0} = {E2A652F8-AE95-4BBD-8928-6B5A66C7E141}
+		{9144343E-1BAC-42AD-BCF5-00BD9D7114DB} = {E2A652F8-AE95-4BBD-8928-6B5A66C7E141}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37EA9343-984B-4500-9A5C-D827E1CC77C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EA9343-984B-4500-9A5C-D827E1CC77C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EA9343-984B-4500-9A5C-D827E1CC77C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EA9343-984B-4500-9A5C-D827E1CC77C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9144343E-1BAC-42AD-BCF5-00BD9D7114DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9144343E-1BAC-42AD-BCF5-00BD9D7114DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9144343E-1BAC-42AD-BCF5-00BD9D7114DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9144343E-1BAC-42AD-BCF5-00BD9D7114DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

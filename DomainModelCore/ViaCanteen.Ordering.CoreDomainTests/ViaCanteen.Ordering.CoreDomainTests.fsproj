@@ -10,8 +10,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="UnitTest1.fs"/>
-        <Compile Include="Program.fs"/>
+        <Compile Include="Drink\JuiceTest.fs" />
+        <Compile Include="Drink\CoffeeTest.fs" />
+        <Compile Include="Drink\TeaTest.fs" />
+        <Compile Include="Drink\DrinkTest.fs" />
+        <Compile Include="Food\FoodTest.fs" />
+        <Compile Include="Food\BreadTest.fs" />
+        <Compile Include="Food\DessertTest.fs" />
+        <Compile Include="Food\SaladTest.fs" />
+        <Compile Include="Food\WarmFoodTest.fs" />
     </ItemGroup>
 
     <ItemGroup>
@@ -20,6 +27,10 @@
         <PackageReference Include="NUnit3TestAdapter" Version="4.2.1"/>
         <PackageReference Include="NUnit.Analyzers" Version="3.6.1"/>
         <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ViaCanteen.Ordering.CoreDomain\ViaCanteen.Ordering.CoreDomain.fsproj" />
     </ItemGroup>
 
 </Project>
