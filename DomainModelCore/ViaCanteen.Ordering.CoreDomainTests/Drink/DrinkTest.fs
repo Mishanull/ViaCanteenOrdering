@@ -1,0 +1,2 @@
+module CoreDomainTests.Drink.DrinkTest
+
