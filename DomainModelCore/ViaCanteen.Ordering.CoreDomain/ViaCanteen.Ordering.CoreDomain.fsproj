@@ -17,7 +17,7 @@
         <Compile Include="Product\Food\Food.fs" />
         <Compile Include="Product\Product.fs"/>
         <Folder Include="Payment\"/>
-        <Folder Include="Customer\"/>
+        <Compile Include="Customer\Customer.fs" />
         <Folder Include="Order\"/>
     </ItemGroup>
 
