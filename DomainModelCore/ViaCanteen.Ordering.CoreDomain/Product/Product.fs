@@ -1,4 +1,4 @@
-module ViaCanteen.Ordering.CoreDomain.Product
+module Product
 
 open Drink
 open Food

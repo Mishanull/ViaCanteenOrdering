@@ -6,18 +6,27 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="Payment\Payment.fs"/>
+
+        <Compile Include="Payment\ViaCard\ViaCard.fs"/>
+        <Compile Include="Payment\CreditCard\CreditCard.fs"/>
+        <Compile Include="Payment\MobilePay\MobilePay.fs"/>
+
         <Compile Include="Product\Drink\Coffee\Coffee.fs"/>
-        <Compile Include="Product\Drink\Tea\Tea.fs" />
-        <Compile Include="Product\Drink\Juice\Juice.fs" />
+        <Compile Include="Product\Drink\Tea\Tea.fs"/>
+        <Compile Include="Product\Drink\Juice\Juice.fs"/>
         <Compile Include="Product\Drink\Drink.fs"/>
-        <Compile Include="Product\Food\Types\Bread.fs" />
-        <Compile Include="Product\Food\Types\Salad.fs" />
-        <Compile Include="Product\Food\Types\Dessert.fs" />
-        <Compile Include="Product\Food\Types\WarmFood.fs" />
-        <Compile Include="Product\Food\Food.fs" />
+        <Compile Include="Product\Food\Types\Bread.fs"/>
+        <Compile Include="Product\Food\Types\Salad.fs"/>
+        <Compile Include="Product\Food\Types\Dessert.fs"/>
+        <Compile Include="Product\Food\Types\WarmFood.fs"/>
+        <Compile Include="Product\Food\Food.fs"/>
         <Compile Include="Product\Product.fs"/>
+
+        <Compile Include="Order\Order.fs"/>
+        
         <Folder Include="Payment\"/>
-        <Folder Include="Customer\"/>
+        <Compile Include="Customer\Customer.fs" />
         <Folder Include="Order\"/>
     </ItemGroup>
 
