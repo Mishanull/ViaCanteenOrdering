@@ -1,0 +1,30 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1b8c10f8_002D5884_002D497c_002Da346_002D91330284f6d6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CoffeeTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::CoreDomainTests+CoffeeTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=49af9206_002Dc716_002D44da_002Da63a_002D912bbdeb5beb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CoffeeTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::CoreDomainTests+CoffeeTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6cf2cab5_002D0ee3_002D43c8_002D9809_002D8e7a7ef83492/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CoffeeTests #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::CoffeeTest+CoffeeTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::JuiceTest+JuiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::TeaTest+TeaTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::DrinkTest+DrinkTests.Price computation for invalid drink item throws exception&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::DrinkTest+DrinkTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::BreadTest+BreadTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::DessertTest+DessertTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::CoreDomainTests.Food.SaladTest+SaladTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::CoreDomainTests.Food.WarmFoodTest+WarmFoodTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::CoreDomainTests.Food.FoodTest+FoodTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cbba3886_002Dca48_002D465f_002Db715_002Dd1a67961023a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CoffeeTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::9144343E-1BAC-42AD-BCF5-00BD9D7114DB::net8.0::CoreDomainTests+CoffeeTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

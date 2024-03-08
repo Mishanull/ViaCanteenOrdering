@@ -1,6 +1,11 @@
 module Juice
 
-type Juice = OrangeJuice | PeachJuice | PomegranateJuice | TomatoJuice
+type Juice =
+  | OrangeJuice
+  | PeachJuice
+  | PomegranateJuice
+  | TomatoJuice
+
 let getJuiceTypeBasePrice (juice: Juice) =
   match juice with
   | OrangeJuice -> 7.0

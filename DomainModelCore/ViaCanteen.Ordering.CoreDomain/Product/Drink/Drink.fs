@@ -39,7 +39,7 @@ let computePrice (drink: Drink) =
   | { Type = { Coffee = Some(coffee) }
       Size = size } -> getCoffeeTypeBasePrice (coffee) + getCoffeeSizeAddition (size)
   | { Type = { Juice = Some(juice) }
-      Size = size } -> getJuiceTypeBasePrice(juice) + getJuiceSizeAddition(size)
+      Size = size } -> getJuiceTypeBasePrice (juice) + getJuiceSizeAddition (size)
   | { Type = { Tea = Some(tea) }
-      Size = size } -> getTeaTypeBasePrice(tea) + getTeaSizeAddition(size)
-  | _ -> failwith("Invalid drink item.")
+      Size = size } -> getTeaTypeBasePrice (tea) + getTeaSizeAddition (size)
+  | _ -> failwith ("Invalid drink item.")

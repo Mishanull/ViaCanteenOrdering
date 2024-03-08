@@ -14,15 +14,16 @@ type Food =
 
 let computeBaseFoodPrice food =
   match food with
-  | { Bread = Some(bread) } -> computeBreadPrice(bread)
+  | { Bread = Some(bread) } -> computeBreadPrice (bread)
   | { Dessert = Some(dessert) } -> computeDessertPrice (dessert)
   | { Salad = Some(salad) } -> computeSaladPricePerBowl (salad)
   | { WarmFood = Some(warmFood) } -> computeWarmFoodPrice (warmFood)
   | _ -> failwith ("Invalid food item.")
-  
+
 let computeFullFoodPrice food =
-  let price = computeBaseFoodPrice(food)
+  let price = computeBaseFoodPrice (food)
+
   if (food.ExtraTax.IsNone) then
-     price 
+    price
   else
-     price + price * (food.ExtraTax.Value / 100.0)
+    price + price * (food.ExtraTax.Value / 100.0)
