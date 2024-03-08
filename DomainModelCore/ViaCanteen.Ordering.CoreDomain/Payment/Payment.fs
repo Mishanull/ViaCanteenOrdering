@@ -1,4 +1,7 @@
 module Payment
-
-type Payment =
-    abstract member ExecutePayment : unit -> unit
+open MobilePay
+open ViaCard
+open CreditCard
+type Payment = MobilePay of MobilePay
+              | ViaCard of ViaCard
+              | CreditCard of CreditCard

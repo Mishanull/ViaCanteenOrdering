@@ -17,5 +17,3 @@ let computeBaseFoodPrice food =
   | Dessert dessert -> computeDessertPrice (dessert)
   | Salad salad -> computeSaladPricePerBowl (salad)
   | WarmFood warmFood -> computeWarmFoodPrice (warmFood)
-
-let computeFullFoodPrice food = computeBaseFoodPrice (food)

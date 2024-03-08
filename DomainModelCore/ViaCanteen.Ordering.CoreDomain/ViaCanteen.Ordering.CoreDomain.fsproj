@@ -6,11 +6,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Payment\Payment.fs"/>
-
+        <Compile Include="Payment\IExecutePayment.fs" />
         <Compile Include="Payment\ViaCard\ViaCard.fs"/>
         <Compile Include="Payment\CreditCard\CreditCard.fs"/>
         <Compile Include="Payment\MobilePay\MobilePay.fs"/>
+
+        <Compile Include="Payment\Payment.fs"/>
 
         <Compile Include="Product\Drink\Coffee\Coffee.fs"/>
         <Compile Include="Product\Drink\Tea\Tea.fs"/>
@@ -25,7 +26,7 @@
 
         <Compile Include="Order\Order.fs"/>
         
-        <Folder Include="Payment\"/>
+        
         <Folder Include="Order\"/>
         <Compile Include="Customer\Customer.fs" />
     </ItemGroup>

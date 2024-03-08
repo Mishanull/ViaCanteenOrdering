@@ -1,12 +1,13 @@
 module CreditCard
 
 open System
-open Payment
+open IExecutePayment
 
 type CreditCard(cardNumber: string, expiryDate: DateTime, amount: float) =
     member _.CardNumber = cardNumber
     member _.ExpiryDate = expiryDate
     member _.Amount = amount
-    interface Payment with
+    
+    interface IExecutePayment with
         member _.ExecutePayment() =
             printfn "CreditCard Payment of %f processed for card %s" amount cardNumber
