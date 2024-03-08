@@ -10,4 +10,4 @@ type Product =
 let computeProductPrice product =
   match product with
   | Drink drink -> computeDrinkPrice(drink)
-  | Food food -> computeFullFoodPrice(food)
+  | Food food -> computeBaseFoodPrice(food)
