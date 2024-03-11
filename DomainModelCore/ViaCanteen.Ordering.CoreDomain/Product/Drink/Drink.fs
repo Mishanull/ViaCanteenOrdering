@@ -5,9 +5,9 @@ open Tea
 open Juice
 
 type DrinkType =
-  { Coffee: Coffee option
-    Juice: Juice option
-    Tea: Tea option }
+     | Coffee of Coffee
+     | Juice of Juice
+     | Tea of Tea
 
 type DrinkSize =
   | Small
@@ -34,12 +34,11 @@ let getJuiceSizeAddition (size: DrinkSize) =
   | Medium -> 1.75
   | Large -> 2.5
 
-let computePrice (drink: Drink) =
+let computeDrinkPrice (drink: Drink) =
   match drink with
-  | { Type = { Coffee = Some(coffee) }
+  | { Type = Coffee coffee 
       Size = size } -> getCoffeeTypeBasePrice (coffee) + getCoffeeSizeAddition (size)
-  | { Type = { Juice = Some(juice) }
+  | { Type =  Juice juice
       Size = size } -> getJuiceTypeBasePrice (juice) + getJuiceSizeAddition (size)
-  | { Type = { Tea = Some(tea) }
+  | { Type = Tea tea
       Size = size } -> getTeaTypeBasePrice (tea) + getTeaSizeAddition (size)
-  | _ -> failwith ("Invalid drink item.")

@@ -26,8 +26,8 @@
         <Compile Include="Order\Order.fs"/>
         
         <Folder Include="Payment\"/>
-        <Compile Include="Customer\Customer.fs" />
         <Folder Include="Order\"/>
+        <Compile Include="Customer\Customer.fs" />
     </ItemGroup>
 
 </Project>

@@ -9,9 +9,9 @@ type Order = {
     OrderDate: DateTime
 }
 
-let createOrder () = {
+let createOrder = {
     Id = Guid.NewGuid()
-    Products = []
+    Products = List.Empty 
     OrderDate = DateTime.Now
 }
 
@@ -19,4 +19,4 @@ let addProduct (order: Order) (product: Product) =
     { order with Products = product :: order.Products }
 
 let computeTotalPrice (order: Order) =
-    order.Products |> List.fold (fun acc prod -> acc + Product.computeProductPrice prod) 0.0
+    order.Products |> List.fold (fun acc prod -> acc + computeProductPrice prod) 0.0
