@@ -1,4 +1,4 @@
 module Payment
 
-type Payment = 
+type Payment =
     abstract member ExecutePayment : unit -> unit

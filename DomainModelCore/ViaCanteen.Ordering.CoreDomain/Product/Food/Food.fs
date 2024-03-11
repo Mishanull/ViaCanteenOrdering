@@ -6,24 +6,16 @@ open WarmFood
 open Dessert
 
 type Food =
-  { Bread: Bread option
-    Dessert: Dessert option
-    Salad: Salad option
-    WarmFood: WarmFood option
-    ExtraTax: float option }
+  | Bread of Bread
+  | Dessert of Dessert
+  | Salad of Salad
+  | WarmFood of WarmFood
 
 let computeBaseFoodPrice food =
   match food with
-  | { Bread = Some(bread) } -> computeBreadPrice (bread)
-  | { Dessert = Some(dessert) } -> computeDessertPrice (dessert)
-  | { Salad = Some(salad) } -> computeSaladPricePerBowl (salad)
-  | { WarmFood = Some(warmFood) } -> computeWarmFoodPrice (warmFood)
-  | _ -> failwith ("Invalid food item.")
+  | Bread bread -> computeBreadPrice (bread)
+  | Dessert dessert -> computeDessertPrice (dessert)
+  | Salad salad -> computeSaladPricePerBowl (salad)
+  | WarmFood warmFood -> computeWarmFoodPrice (warmFood)
 
-let computeFullFoodPrice food =
-  let price = computeBaseFoodPrice (food)
-
-  if (food.ExtraTax.IsNone) then
-    price
-  else
-    price + price * (food.ExtraTax.Value / 100.0)
+let computeFullFoodPrice food = computeBaseFoodPrice (food)

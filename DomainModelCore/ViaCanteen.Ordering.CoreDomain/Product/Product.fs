@@ -3,10 +3,11 @@ module Product
 open Drink
 open Food
 
-type Product = { Drink: Drink option; Food: Food option }
+type Product =
+    | Drink of Drink
+    | Food of Food
 
 let computeProductPrice product =
   match product with
-  | {Drink= Some(drink); Food = None} -> computePrice(drink)
-  | {Drink= None; Food = Some(food)} -> computeFullFoodPrice(food)
-  | _ -> failwith "Misconfiguration in product."
+  | Drink drink -> computeDrinkPrice(drink)
+  | Food food -> computeFullFoodPrice(food)
